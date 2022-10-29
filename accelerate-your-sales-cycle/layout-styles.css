@@ -1,0 +1,384 @@
+/*
+Reset styles, strip out evil browser default styles
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'didot-regular';
+    src: url('didotlh-romanosf-webfont.woff2') format('woff2'),
+         url('didotlh-romanosf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'didot-italic';
+    src: url('didotlh-italicosf-webfont.woff2') format('woff2'),
+         url('didotlh-italicosf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  src: url('gilroy-extrabold.eot');
+  font-family: 'Gilroy-ExtraBold';
+  src: url('gilroy-extrabold.woff2') format('woff2'), url('gilroy-extrabold.woff') format('woff'), url('gilroy-extrabold.eot?#iefix') format('embedded-opentype'), url('gilroy-extrabold.ttf') format('truetype');
+}
+@font-face {
+  src: url('gilroy-light.eot');
+  font-family: 'Gilroy-Light';
+  src: url('gilroy-light.woff2') format('woff2'), url('gilroy-light.woff') format('woff'), url('gilroy-light.eot?#iefix') format('embedded-opentype'), url('gilroy-light.ttf') format('truetype');
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	position: relative;
+	overflow-x: hidden;
+	background: #fff;
+	color: #333;
+	font-family: "didot-regular", Georgia, Cambria, "Times New Roman", Times, serif;
+	font-size: 16px;
+	letter-spacing: 0px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input {
+    border-radius: 0;
+	 -webkit-appearance: none;
+}
+textarea, input, button { outline: none; }
+
+video::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+a {
+	text-decoration: none;
+}
+p a {
+		border-bottom: 3px solid #00f0ff;
+}
+
+strong {
+	font-weight: bold;
+	color: #000;
+}
+
+button {
+  background: none;
+	border: none;
+}
+button:hover {
+	cursor: pointer;
+}
+.off {
+	display: none;
+}
+
+.brclear {
+	clear: both;
+}
+.bullet-clear {
+	clear: both;
+	height: 20px;
+}
+
+#close-button {
+	cursor: pointer;
+}
+a:link {
+		color: #333;
+}
+a:visited {
+		color: #333;
+}
+a:hover {
+	color: #000;
+	-webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+button {
+	font-size: 16px;
+	color: #666;
+	font-family: "didot-italic", serif;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+button:hover {
+	color: #f6f7e6;
+	-webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#headlines {
+	padding-top: 13vh;
+	padding-bottom: 10vh;
+}
+h1
+{
+    font-family:'Gilroy-ExtraBold',Sans-Serif;
+    font-weight: normal;
+    font-size: 112px;
+    letter-spacing: -4px;
+    line-height: 96px;
+		padding: 0 50px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+h2
+{
+    font-family:'didot-italic', serif;;
+    font-weight: normal;
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 46px;
+		margin-bottom: 32px;
+		padding: 0 50px;
+    transition: all .3s ease-out;
+}
+
+h3
+{
+		font-family:'Gilroy-ExtraBold',Sans-Serif;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 32px;
+		letter-spacing: -1px;
+		margin-bottom: 18px;
+    transition: all .3s ease-out;
+		color: #000;
+}
+
+h4
+{
+		font-family:'Gilroy-Light',Sans-Serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    transition: all .3s ease-out;
+		margin-bottom: 24px;
+}
+.detail {
+	color: #666;
+	font-size: 14px;
+
+}
+p {
+		font-family: Georgia, "Times New Roman", Times, serif;
+    display: block;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    margin-top: 0;
+		color: #333;
+}
+li {
+    font-family:'Gilroy-Light',Sans-Serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+#brandbar {
+	height: 30px;
+	background: #fff;
+	padding: 40px 100px;
+	max-width: 1180px;
+	margin: auto;
+	display: none;
+}
+#bottom-logo {
+	height: 50px;
+	float: left;
+}
+.logo {
+	height: 100%;
+}
+#masthead-image {
+	width: 100%;
+	background: #171717 url('cover.jpg') center center no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.avatar {
+	border-radius: 100%;
+	height: 60px;
+}
+#attributation-bar {
+	font-family:'Gilroy-Light',Sans-Serif;
+	padding: 50px 100px;
+	max-width: 1180px;
+	margin: auto;
+}
+#social-links {
+	float: right;
+}
+#author-avatar {
+	float: left;
+}
+#author-info {
+	float: left;
+}
+#article {
+	max-width: 1180px;
+	margin: auto;
+	padding: 0 100px;
+}
+#sidebar {
+	font-family:'Gilroy-Light',Sans-Serif;
+	width: 15%;
+	float: left;
+}
+#article-body {
+	width: 65%;
+	float: left;
+	margin-left: 100px;
+	padding-bottom: 100px;
+}
+.author-name {
+	font-family:'Gilroy-ExtraBold',Sans-Serif;
+}
+.author-title {
+	color: #999;
+}
+.time-stamp {
+	font-size: 12px;
+}
+#author-info {
+	padding: 5px 10px;
+}
+#footer {
+	background: #111;
+	min-height: 300px;
+}
+#footer-content {
+	max-width: 1180px;
+	margin: auto;
+	padding: 50px 100px;
+}
+#contact-info {
+	color: #fff;
+	padding-top: 25px;
+	float: right;
+	line-height: 24px;
+}
+
+
+@media only screen and (max-width: 880px) {
+		#sidebar {
+			display: none;
+		}
+		#article-body {
+			width: 100%;
+			float: none;
+			margin-left: 0px;
+		}
+		#brandbar {
+			padding: 20px 0px;
+			margin: auto;
+			text-align: center;
+		}
+}
+
+@media only screen and (max-width: 600px) {
+	#social-links {
+		float: none;
+		clear: both;
+		padding-top: 20px;
+	}
+	#article {
+		padding: 0 40px;
+	}
+	#attributation-bar {
+		/* padding: 40px 40px; */
+	}
+	h2
+	{
+	    font-size: 24px;
+	    line-height: 29px;
+			margin-bottom: 32px;
+			padding: 10px;
+	    transition: all .3s ease-out;
+	}
+	h1
+	{
+	    font-size: 64px;
+	    letter-spacing: -2px;
+	    line-height: 58px;
+	    padding-bottom: 20px;
+	}
+
+	#headlines {
+		padding-top: 7vh;
+		padding-bottom: 5vh;
+	}
+	h3
+	{
+	    font-size: 24px;
+	    line-height: 24px;
+			letter-spacing: -1px;
+			margin-bottom: 12px;
+	}
+	p {
+	    font-size: 18px;
+	    line-height: 25px;
+	    margin-bottom: 26px;
+	}
+	#footer-content {
+		padding: 40px 40px;
+	}
+
+
+}
+
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+.appleLinksWhite a {color:#ffffff; text-decoration: none;}
