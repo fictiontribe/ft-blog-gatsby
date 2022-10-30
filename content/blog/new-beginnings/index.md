@@ -1,6 +1,9 @@
 ---
 title: New Beginnings
 date: "2022-11-01T22:40:32.169Z"
+video:
+  URL: https://player.vimeo.com/video/163721649?h=7eff968989
+  title: "Vimeo placeholder title"
 featuredimage:
   src: "./cover.jpg"
   alt: "New beginnings"
