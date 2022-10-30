@@ -7,6 +7,12 @@ video:
 featuredimage:
   src: "./cover.jpg"
   alt: "New beginnings"
+author:
+  name: "Tobias Sugar"
+  role: "Creative Director"
+  image:
+    src: "./avatar-tobias.png"
+    alt: "Tobias Sugar"
 description: With a commitment to curiosity, we help brands envision who they are, and what they’re becoming. It all starts with being present for clients. Doing the legwork to understand their markets, offerings, sales cycles, competitors, and buyers. Mapping out their corner of the world to craft creative made for delivering tremendous results. But that’s only table stakes.
 ---
 

@@ -7,11 +7,25 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { useState, useEffect } from "react"
+
+import { StaticImage, GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
+
 import instagram from '../images/instagram_black.svg';
 import linkedin from '../images/linkedin_black.svg';
 import vimeo from '../images/vimeo_black.svg';
-const Bio = () => {
+const Bio = (props) => {
+
+  const [post, setPost] = React.useState(props.post);
+
+  let imageData;
+
+  useEffect(() => {
+      setPost(props.post);
+      console.log(post)
+      imageData = getImage(post?.frontmatter?.author?.image?.src)
+      }, [post])
+
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -27,10 +41,10 @@ const Bio = () => {
       }
     }
   `)
-
+  
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  const author = data?.site?.siteMetadata?.author
+  const social = data?.site?.siteMetadata?.social
     {/* <div className="bio">
       <StaticImage
         className="bio-avatar"
@@ -54,24 +68,29 @@ const Bio = () => {
     </div> */}
   return (
     <div id="attributation-bar">
+      { post?.frontmatter?.author?.image?.src &&
       <div id="author-avatar">
-        <StaticImage
+        <GatsbyImage
           className="bio-avatar rounded-circle"
           layout="fixed"
           formats={["auto", "webp", "avif"]}
-          src="../images/avatar-tobias.png"
+          image={imageData}
           width={50}
           height={50}
           quality={95}
-          alt="Tobias Sugar"
+          alt={post?.frontmatter?.author?.name ? post?.frontmatter?.author?.name : "Fiction Tribe"}
         />
       </div>
+            }
       <div id="author-info">
-        <span class="author-name">Tobias Sugar</span>
+        <span class="author-name">{post?.frontmatter?.author?.name ? post?.frontmatter?.author?.name : "Fiction Tribe"}</span>
+        {post?.frontmatter?.author?.role && <>
         <br/>
-        <span class="author-title">Creative Director</span>
+        <span class="author-title">{post.frontmatter.author.role}</span>
+        </>
+        }
         <br/>
-        <span class="time-stamp">Nov 1, 2022</span>
+        <span class="time-stamp">{post?.frontmatter?.date}</span>
       </div>
       <div id="social-links">
         <a href="https://www.linkedin.com/company/the-fiction-tribe" className="mx-2" target="_blank"><img

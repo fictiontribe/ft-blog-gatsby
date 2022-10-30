@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
@@ -17,6 +18,11 @@ const BlogPostTemplate = ({
   const featuredimage = post.frontmatter.featuredimage
   const imageData = post.frontmatter.featuredimage.src.childImageSharp.fluid
   const videoURL = post.frontmatter?.video?.URL
+  const [postData, setPostData] = useState(post);
+    
+  useEffect(() => {
+      setPostData(post);
+      }, [post])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -37,7 +43,7 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <div className="container">
-          <Bio />
+          <Bio post={ postData } />
 
           <div className="row">
             <div className="col-sm-3 about-ft">
@@ -127,6 +133,20 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        author {
+          name
+          role
+          image {
+            alt
+            src {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         title
         date(formatString: "MMMM DD, YYYY")
         description
