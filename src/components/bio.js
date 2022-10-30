@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import instagram from '../images/instagram_black.svg';
 import linkedin from '../images/linkedin_black.svg';
-
+import vimeo from '../images/vimeo_black.svg';
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -80,6 +80,10 @@ const Bio = () => {
         <a href="https://instagram.com/fictiontribe/" target="_blank" className="mx-2"><img
                 src={instagram} border="0" width="30" height="30"
                 alt="Instagram"/></a>
+        <a href="https://vimeo.com/fictiontribe" className="mx-2" target="_blank"><img
+                src={vimeo} border="0" width="30" height="30"
+                alt="Vimeo"/></a>
+
       </div>
       <div class="brclear"></div>
 		</div>
