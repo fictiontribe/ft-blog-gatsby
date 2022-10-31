@@ -1,0 +1,176 @@
+body {
+	// background-color: teal;
+	transition: background-color .5s ease;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.flexcontainer {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   height: 100%;
+}
+
+.logostyle {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.follow {
+  position: absolute;
+  background-color: gold;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(5px, 5px);
+}
+.follow.active {
+  opacity: 0.7;
+  transform: scale(3);
+}
+.follow.hovered {
+  opacity: 0.08;
+}
+
+.project.section {
+  // z-index: 2;
+}
+.click-box {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.clicker {
+color: white;
+background-color: rgba(black, .7);
+display: inline-block;
+clear: both;
+padding: 8px 10px;
+}
+
+.logo-wrap {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+ #animatedButton, #animatedButton:active, #animatedButton:focus { 
+	border:none; 
+	background-color: transparent;
+	outline: none;
+  &.disabled {
+  	pointer-events: none;
+  }
+} 
+
+.disabled {
+  pointer-events: none;
+}
+
+
+  #svgVideo {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+  object-fit: cover;
+   &:hover {
+  		transition: all .5s ease;
+  	}
+}
+
+  .logosvg {
+  	left: 0;
+  	right: 0;
+    margin: 0 auto;
+  	width: 300px;
+  	height: 300px;
+  	 overflow: visible;
+  	&:hover {
+  		transition: all .5s ease;
+  	}
+  }
+
+
+#t, #f-n-t {
+  visibility: hidden;
+}
+
+
+.bg-image {
+	width: 100%;
+	height: 100%;
+}
+
+.fallback, #animatedButton, #svgVideo {
+	display: none;
+}
+
+.word-mark {
+  max-width: 300px;
+}
+.fallback {
+  height: 300px;
+}
+.fallback img{
+  width: 300px;
+  // position: absolute;
+ filter:  url(#glitch);
+}
+
+@media only screen and (max-width: 600px) {
+   .logosvg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .logostyle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .word-mark {
+    max-width: 250px;
+  }
+  .fallback {
+    height: 250px;
+  }
+  .fallback img{
+    width: 250px;
+    // min-width: 400px;
+}
+.follow {
+  opacity: 0!important;
+}
+}
+
+@media (hover:  none) {
+  .follow {
+    opacity: 0!important;
+  }
+}
