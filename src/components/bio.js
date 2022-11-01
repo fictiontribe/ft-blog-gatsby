@@ -103,7 +103,7 @@ const Bio = (props) => {
         <span class="time-stamp">{post?.frontmatter?.date}</span>
       </div>
       <div id="social-links">
-        <a href="https://www.linkedin.com/company/the-fiction-tribe" className="mx-2" target="_blank"><img
+        <a href="https://www.linkedin.com/company/fictiontribe" className="mx-2" target="_blank"><img
           src={linkedin} border="0" width="30" height="30"
           alt="LinkedIN" /></a>
         <a href="https://instagram.com/fictiontribe/" target="_blank" className="mx-2"><img
