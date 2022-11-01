@@ -18,6 +18,7 @@ const BlogPostTemplate = ({
   const featuredimage = post.frontmatter.featuredimage
   const imageData = post.frontmatter.featuredimage.src.childImageSharp.fluid
   const videoURL = post.frontmatter?.video?.URL
+  const ogImagePath = post.frontmatter?.ogimage?.src.childImageSharp.fixed.src
   const [postData, setPostData] = useState(post);
     
   useEffect(() => {
@@ -111,6 +112,7 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
+      image={post.frontmatter?.ogimage?.src.childImageSharp.fixed.src}
     />
   )
 }
@@ -159,6 +161,15 @@ export const pageQuery = graphql`
             }
           }
           alt
+        }
+        ogimage { 
+          src {
+            childImageSharp {
+              fixed {
+                src
+              }
+            }
+          }
         }
       }
     }

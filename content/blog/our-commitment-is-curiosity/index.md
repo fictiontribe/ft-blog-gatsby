@@ -3,13 +3,16 @@ title: Our Commitment Is Curiosity. Our Reputation Is Results.
 date: "2022-11-01T22:40:32.169Z"
 featuredimage:
   src: "./blog1.png"
-  alt: "New beginnings"
+  alt: "Our Commitment Is Curiosity. Our Reputation Is Results."
 author:
   name: "Tobias Sugar"
   role: "Creative Director"
   image:
     src: "./avatar-tobias.png"
     alt: "Tobias Sugar"
+ogimage: 
+  src: "./og-image.png"
+  alt: "og"
 description: Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, from NFTs to AR, and everything in between, to decide when (or if) it makes sense to incorporate them into our strategic marketing.
 ---
 
