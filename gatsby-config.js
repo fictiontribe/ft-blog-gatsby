@@ -13,7 +13,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-open-graph-images`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
