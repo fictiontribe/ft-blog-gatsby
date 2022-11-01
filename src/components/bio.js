@@ -84,11 +84,11 @@ const Bio = (props) => {
             className="bio-avatar rounded-circle"
             layout="fixed"
             formats={["auto", "webp", "avif"]}
-            src="../images/avatar-tobias.png"
+            src="../images/mike-avatar.jpg"
             width={50}
             height={50}
             quality={95}
-            alt="Tobias sugar"
+            alt="Mike Caplan"
           />
         </div>
       }

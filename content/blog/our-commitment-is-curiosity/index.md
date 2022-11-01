@@ -5,11 +5,11 @@ featuredimage:
   src: "./blog1.png"
   alt: "Our Commitment Is Curiosity. Our Reputation Is Results."
 author:
-  name: "Tobias Sugar"
-  role: "Creative Director"
+  name: "Mike Caplan"
+  role: "Chief Operating Officer"
   image:
-    src: "./avatar-tobias.png"
-    alt: "Tobias Sugar"
+    src: "./mike-avatar.png"
+    alt: "Mike Caplan"
 ogimage: 
   src: "./og-image.png"
   alt: "og"
