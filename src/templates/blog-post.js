@@ -46,11 +46,11 @@ const BlogPostTemplate = ({
           <Bio post={ postData } />
 
           <div className="row">
-            <div className="col-sm-3 about-ft">
+            <div className="col-md-3 about-ft">
               <h4>About Fiction Tribe</h4>
               <p>We focus on moving from marketing products to making the case for outcomes, always letting real time data drive results. Maximizing MarTech platform investments, creating smart interactive content that increases engagement, and driving leads is our specialty.</p>
             </div>
-            <div className="col-sm-9">
+            <div className="col-md-8">
             {videoURL && (
             <Video
             videoSrcURL={videoURL}
@@ -159,10 +159,6 @@ export const pageQuery = graphql`
             }
           }
           alt
-        }
-        video {
-          URL
-          title 
         }
       }
     }
