@@ -1,10 +1,12 @@
 import * as React from "react"
+import { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Video from "../components/video"
 
 import { css } from "@emotion/react"
 
@@ -15,6 +17,12 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
   const featuredimage = post.frontmatter.featuredimage
   const imageData = post.frontmatter.featuredimage.src.childImageSharp.fluid
+  const videoURL = post.frontmatter?.video?.URL
+  const [postData, setPostData] = useState(post);
+    
+  useEffect(() => {
+      setPostData(post);
+      }, [post])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -34,14 +42,21 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
-        <div class="container">
-          <Bio />
-          <div class="row">
-            <div class="col-sm-3 about-ft">
+        <div className="container">
+          <Bio post={ postData } />
+
+          <div className="row">
+            <div className="col-sm-3 about-ft">
               <h4>About Fiction Tribe</h4>
               <p>We focus on moving from marketing products to making the case for outcomes, always letting real time data drive results. Maximizing MarTech platform investments, creating smart interactive content that increases engagement, and driving leads is our specialty.</p>
             </div>
-            <div class="col-sm-9">
+            <div className="col-sm-9">
+            {videoURL && (
+            <Video
+            videoSrcURL={videoURL}
+            videoTitle={post.frontmatter?.video?.title}
+            />
+          )}
               <section
                 dangerouslySetInnerHTML={{ __html: post.html }}
                 itemProp="articleBody" className="px-sm-5"
@@ -66,7 +81,7 @@ const BlogPostTemplate = ({
                   <li className="prev-post col-sm-6">
                     {previous && (
                       <Link to={previous.fields.slug} rel="prev">
-                        <span class="small-title"><i class="fa fa-arrow-left" aria-hidden="true"></i>Previous</span>
+                        <span className="small-title"><i className="fa fa-arrow-left" aria-hidden="true"></i>Previous</span>
                         <p className="link-next-prev">← {previous.frontmatter.title}</p>
                       </Link>
                     )}
@@ -75,7 +90,7 @@ const BlogPostTemplate = ({
                    
                     {next && (
                       <Link to={next.fields.slug} rel="next">
-                        <span class="small-title">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        <span className="small-title">Next <i className="fa fa-arrow-right" aria-hidden="true"></i></span>
                         <p className="link-next-prev"> {next.frontmatter.title} →</p>
                       </Link>
                     )}
@@ -118,6 +133,20 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        author {
+          name
+          role
+          image {
+            alt
+            src {
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         title
         date(formatString: "MMMM DD, YYYY")
         description
@@ -130,6 +159,10 @@ export const pageQuery = graphql`
             }
           }
           alt
+        }
+        video {
+          URL
+          title 
         }
       }
     }

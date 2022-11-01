@@ -624,3 +624,35 @@ a[href^=tel] {
   color: #ffffff;
   text-decoration: none;
 }
+
+/* Video Component Start */
+
+.video iframe {
+  width: 100%;
+}
+
+@media(max-width:1300px) {
+  iframe {
+    height: 300px;
+  }
+}
+
+@media(max-width:992px) {
+  iframe {
+    height: 200px;
+  }
+}
+
+@media(max-width:768px) {
+  iframe {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/* Video Component End */
+
+.col-sm-3.about-ft p {
+  font-family: 'Gilroy';
+  line-height: 1.45em;
+}
