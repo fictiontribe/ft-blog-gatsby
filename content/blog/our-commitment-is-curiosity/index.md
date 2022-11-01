@@ -8,7 +8,7 @@ author:
   name: "Mike Caplan"
   role: "Chief Operating Officer"
   image:
-    src: "./mike-avatar.png"
+    src: "./mike-avatar.jpg"
     alt: "Mike Caplan"
 ogimage: 
   src: "./og-image.png"
