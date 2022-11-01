@@ -23,9 +23,9 @@ description: Every day, there’s news of next-generation technology impacting m
 
 ### Change is our creative fuel
 
-Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, from NFTs to AR, and everything in between, to decide when (or if) it makes sense to incorporate them into our strategic marketing.
+Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, to help decode value from the buzz and decide when (or if) it makes sense to incorporate them into our clients’ strategic marketing.
 
-That’s why our team hosts internal hackathons to dive into the realm of NFTs, Web3, to experiment with augmented reality, and more. It’s our aim to stay ahead of trends and assess their market viability. This first-hand knowledge helps us guide, inform and counsel, and inspire. Like the shark that suffocates if it stops moving, we endlessly pursue the practical “Knowledge of Now.” That’s the life-blood of our shop.
+That’s why our team hosts internal hackathons to dive into the realm of gaming, Web3, NFT wallets, to experiment with augmented reality, rewire customer databases, and more. It’s our aim to stay ahead of trends and assess their market viability. This first-hand knowledge helps us guide, inform and counsel, and inspire. Like the shark that suffocates if it stops moving, we endlessly pursue the practical “Knowledge of Now.” That’s the life-blood of our shop.
 
 
 ### Want to know what drives us? Here’s a short list: 
