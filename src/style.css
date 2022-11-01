@@ -651,3 +651,8 @@ a[href^=tel] {
 }
 
 /* Video Component End */
+
+.col-sm-3.about-ft p {
+  font-family: 'Gilroy';
+  line-height: 1.45em;
+}
