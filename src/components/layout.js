@@ -54,7 +54,6 @@ const Layout = ({ location, title, children }) => {
                 Fiction Tribe<br />
                 350 SE Mill St.<br />
                 Portland, OR 97214<br />
-                Suite 8<br />
                 <span class="appleLinksWhite">503.954.2268</span>
               </div>
               <div class="breclear"></div>

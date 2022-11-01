@@ -20,10 +20,10 @@ const BlogPostTemplate = ({
   const videoURL = post.frontmatter?.video?.URL
   const ogImagePath = post.frontmatter?.ogimage?.src.childImageSharp.fixed.src
   const [postData, setPostData] = useState(post);
-    
+
   useEffect(() => {
-      setPostData(post);
-      }, [post])
+    setPostData(post);
+  }, [post])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -44,31 +44,35 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <div className="container">
-          <Bio post={ postData } />
+          <Bio post={postData} />
 
           <div className="row">
             <div className="col-md-3 about-ft">
               <h4>About Fiction Tribe</h4>
-              <p>We focus on moving from marketing products to making the case for outcomes, always letting real time data drive results. Maximizing MarTech platform investments, creating smart interactive content that increases engagement, and driving leads is our specialty.</p>
+              <p>We’re Fiction Tribe, an independent digital creative team
+                that rethinks disruptive technology for brands to
+                vigorously connect people and ideas.
+                Our technology chops, design rigor and industry acumen
+                combine with a shit-ton of hustle to make great work that works.</p>
             </div>
             <div className="col-md-8">
-            {videoURL && (
-            <Video
-            videoSrcURL={videoURL}
-            videoTitle={post.frontmatter?.video?.title}
-            />
-          )}
+              {videoURL && (
+                <Video
+                  videoSrcURL={videoURL}
+                  videoTitle={post.frontmatter?.video?.title}
+                />
+              )}
               <section
                 dangerouslySetInnerHTML={{ __html: post.html }}
                 itemProp="articleBody" className="px-sm-5"
               />
               <hr />
               <footer>
-                
+
               </footer>
             </div>
             <div id="next-prev" className="row">
-              
+
               <nav className="blog-post-nav">
                 <ul
                   style={{
@@ -88,7 +92,7 @@ const BlogPostTemplate = ({
                     )}
                   </li>
                   <li className="next-post col-sm-6 text-end">
-                   
+
                     {next && (
                       <Link to={next.fields.slug} rel="next">
                         <span className="small-title">Next <i className="fa fa-arrow-right" aria-hidden="true"></i></span>
