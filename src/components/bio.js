@@ -97,7 +97,7 @@ const Bio = (props) => {
         {post?.frontmatter?.author?.role && <>
           <br />
           <span class="author-title">{post.frontmatter.author.role}</span>
-          <span class="author-contact">mike@fictiontribe.com | 503-737-9015</span>
+          <span class="author-contact">mike@fictiontribe.com | 503-954-2268</span>
         </>
         }
         <span class="time-stamp">{post?.frontmatter?.date}</span>
