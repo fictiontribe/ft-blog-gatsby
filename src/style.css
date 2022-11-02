@@ -17,14 +17,19 @@
 }
 
 @font-face {
-src: url('fonts/gilroy-extrabold.eot');
-font-family: 'Gilroy-ExtraBold';
-src: url('fonts/gilroy-extrabold.woff2') format('woff2'), url('fonts/gilroy-extrabold.woff') format('woff'), url('fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), url('fonts/gilroy-extrabold.ttf') format('truetype');
+  src: url('fonts/gilroy-extrabold.eot');
+  font-family: 'Gilroy-ExtraBold';
+  src: url('fonts/gilroy-extrabold.woff2') format('woff2'), url('fonts/gilroy-extrabold.woff') format('woff'), url('fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), url('fonts/gilroy-extrabold.ttf') format('truetype');
 }
 @font-face {
-src: url('fonts/gilroy-light.eot');
-font-family: 'Gilroy-Light';
-src: url('fonts/gilroy-light.woff2') format('woff2'), url('fonts/gilroy-light.woff') format('woff'), url('fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), url('fonts/gilroy-light.ttf') format('truetype');
+  src: url('fonts/gilroy-light.eot');
+  font-family: 'Gilroy-Light';
+  src: url('fonts/gilroy-light.woff2') format('woff2'), url('fonts/gilroy-light.woff') format('woff'), url('fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), url('fonts/gilroy-light.ttf') format('truetype');
+}
+@font-face {
+  src: url('fonts/Gilroy-Regular.ttf');
+  font-family: 'Gilroy-Regular';
+  src: url('fonts/Gilroy-Regular.woff2') format('woff2'), url('fonts/Gilroy-Regular.woff') format('woff'), url('fonts/Gilroy-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -654,7 +659,7 @@ a[href^=tel] {
 
 /* Visual up */
 .about-ft p {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Regular';
   line-height: 1.35em;
   font-size: 16px;
   margin-bottom: 14px;
@@ -668,15 +673,25 @@ a[href^=tel] {
 
 .author-title {
   font-size: 14px;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Regular';
   color: #000;
   display: block;
   margin-bottom: -14px;
   margin-top: 2px;
 }
 
-.time-stamp {
+.author-contact {
+  font-size: 14px;
+  font-family: 'Gilroy-Regular';
   color: #999;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.time-stamp {
+  color: #000;
+  margin-top: 4px;
 }
 
 @media (min-width: 1340px) {
