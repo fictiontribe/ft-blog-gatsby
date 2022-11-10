@@ -7,6 +7,7 @@ featuredimage:
 author:
   name: "Mike Caplan"
   role: "Chief Operating Officer"
+  email: "mike@fictiontribe.com | 503-954-2268"
   image:
     src: "./mike-avatar.jpg"
     alt: "Mike Caplan"

@@ -5,11 +5,12 @@ featuredimage:
   src: "./blog1.png"
   alt: "Don’t Sink in a Sea of Same"
 author:
-  name: "Mike Caplan"
-  role: "Chief Operating Officer"
+  name: "Stephen Kozik"
+  email: "stephen@fictiontribe.com"
+  role: "Executive Creative Director"
   image:
-    src: "./mike-avatar.jpg"
-    alt: "Mike Caplan"
+    src: "./kozik-avatar.jpg"
+    alt: "Stephen Kozik"
 ogimage: 
   src: "./og-image.png"
   alt: "og"

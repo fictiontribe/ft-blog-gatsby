@@ -54,6 +54,7 @@ const BlogPostTemplate = ({
                 vigorously connect people and ideas.
                 Our technology chops, design rigor and industry acumen
                 combine with a shit-ton of hustle to make great work that works.</p>
+              <a className="gilroy-link" target="_blank" href="https://fictiontribe.com">Visit our website</a>
             </div>
             <div className="col-md-8">
               {videoURL && (
@@ -142,13 +143,15 @@ export const pageQuery = graphql`
         author {
           name
           role
+          email
           image {
             alt
             src {
               childImageSharp {
-                fluid(maxWidth: 1024) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 50
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }

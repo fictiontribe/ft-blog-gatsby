@@ -1,8 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import logoWhite from '../images/fictiontribe-logo-white.png';
+import logoBlack from '../images/FT-logo-min.png';
+import { gsap, Power2 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Layout = ({ location, title, children }) => {
+  gsap.registerPlugin(ScrollTrigger);
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -10,7 +14,7 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       // <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+      <Link to="/">{title}</Link>
       // </h1>
     )
   } else {
@@ -21,16 +25,50 @@ const Layout = ({ location, title, children }) => {
     )
   }
 
+  React.useEffect(() => {
+    let tl = gsap.timeline({
+      // yes, we can add it to an entire timeline!
+      scrollTrigger: {
+        trigger: "body",
+        start: "top -100px",
+        end: "top -400px",
+        scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      }
+    });
+  
+    tl
+    // .to(".logo-top-image", { top: "15px", left: "15px" }, "logo")
+      .to(".header-logo", { scale: 0.52, ease: "Power2.out" }, "logo")
+      .to(".header-logo", { background: "#a55490", ease: "Power2.out" }, "logo-color")
+      
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "body",
+        start: "top -1400px",
+        end: "3000px",
+        scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      }
+    });
+  
+    tl2
+    // .to(".logo-top-image", { top: "15px", left: "15px" }, "logo")
+    .to(".header-logo", { background: "#357fb5" }, "color-change")
+  }, [])
+
+
   return (
     <div>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
-        <nav id="layout-nav" className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a className="header-logo" href="http://blog.fictiontribe.com/">
+          <img src={logoWhite} className="logo-top-image" />
+        </a>
+        {/* <nav id="layout-nav" className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">Fiction Tribe Blog</a>
           </div>
-        </nav>
+        </nav> */}
         {isRootPath &&
-          <header className="global-header pt-4">
+          <header className="global-header">
             <div id="hero">
               <div id="masthead-image" className="homepage">
                 <div id="headlines">
@@ -41,7 +79,12 @@ const Layout = ({ location, title, children }) => {
             </div>
           </header>
         }
-        <main className="py-5">{children}</main>
+        {isRootPath &&
+          <main className="py-5">{children}</main>
+        }
+        {!isRootPath &&
+          <main>{children}</main>
+        }
         <footer id="footer">
           <div id="footer-content">
             <div id="bottom-logo" className="col-6 col-md-9 col-lg-10">

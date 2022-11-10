@@ -17,34 +17,38 @@ import vimeo from '../images/vimeo_black.svg';
 const Bio = (props) => {
 
   const [post, setPost] = React.useState(props.post);
-  const [imageData, setImageData] = React.useState(post?.frontmatter?.author?.image?.src?.childImageSharp.fluid);
+  // const avatar = getImage(post?.frontmatter?.author?.image?.src);
+  const [avatar, setAvatar] = React.useState(getImage(post?.frontmatter?.author?.image?.src));
 
   useEffect(() => {
     setPost(props.post);
     console.log(post)
-    setImageData(post?.frontmatter?.author?.image?.src?.childImageSharp.fluid)
-    console.log(imageData)
+    // setImageData(post?.frontmatter?.author?.image?.src?.childImageSharp.fluid)
+    setAvatar(getImage(post?.frontmatter?.author?.image?.src));
+    console.log(avatar)
   }, [post])
 
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query BioQuery {
+  //     site {
+  //       siteMetadata {
+  //         author {
+  //           name
+  //           summary
+  //           email
+  //           image
+  //         }
+  //         social {
+  //           twitter
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data?.site?.siteMetadata?.author
-  const social = data?.site?.siteMetadata?.social
+  // const author = data?.site?.siteMetadata?.author
+  // const social = data?.site?.siteMetadata?.social
   {/* <div className="bio">
       <StaticImage
         className="bio-avatar"
@@ -68,36 +72,34 @@ const Bio = (props) => {
     </div> */}
   return (
     <div id="attributation-bar">
-      {imageData &&
-        <div id="author-avatar">
-          {/* <GatsbyImage
-            className="bio-avatar rounded-circle"
-            layout="relative"
-            formats={["auto", "webp", "avif"]}
-            image={imageData}
-            width={50}
-            height={50}
-            quality={95}
-            alt={post?.frontmatter?.author?.name ? post?.frontmatter?.author?.name : "Fiction Tribe"}
-          /> */}
-          <StaticImage
-            className="bio-avatar rounded-circle"
-            layout="fixed"
-            formats={["auto", "webp", "avif"]}
-            src="../images/mike-avatar.jpg"
-            width={50}
-            height={50}
-            quality={95}
-            alt="Mike Caplan"
-          />
-        </div>
-      }
+      <div id="author-avatar">
+        <GatsbyImage
+          className="bio-avatar rounded-circle"
+          layout="relative"
+          formats={["auto", "webp", "avif"]}
+          image={avatar}
+          width={50}
+          height={50}
+          quality={95}
+          alt={post?.frontmatter?.author?.name ? post?.frontmatter?.author?.name : "Fiction Tribe"}
+        />
+        {/* <StaticImage
+          className="bio-avatar rounded-circle"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src={post?.frontmatter?.author?.image?.src}
+          width={50}
+          height={50}
+          quality={95}
+          alt="Mike Caplan"
+        /> */}
+      </div>
       <div id="author-info">
         <span class="author-name">{post?.frontmatter?.author?.name ? post?.frontmatter?.author?.name : "Fiction Tribe"}</span>
         {post?.frontmatter?.author?.role && <>
           <br />
-          <span class="author-title">{post.frontmatter.author.role}</span>
-          <span class="author-contact">mike@fictiontribe.com | 503-954-2268</span>
+          <span class="author-title">{post?.frontmatter?.author?.role}</span>
+          <span class="author-contact">{post?.frontmatter?.author?.email}</span>
         </>
         }
         <span class="time-stamp">{post?.frontmatter?.date}</span>

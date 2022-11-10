@@ -361,6 +361,39 @@ li {
   display: none;
 }
 
+a.gilroy-link {
+  font-family: 'Gilroy-ExtraBold' !important;
+}
+
+.header-logo {
+  position: fixed;
+  z-index: 100;
+  transform-origin: left top;
+  /* top: 35px;
+  left: 35px; */
+  padding: 20px;
+  /* background: #357fb5; */
+}
+
+.header-logo .logo-top-image {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  transform-origin: left top;  
+}
+
+@media (max-width: 768px) {
+  .header-logo .logo-top-image {
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+  }
+  .header-logo {
+    /* display: none; */
+    padding: 10px;
+  }
+}
+
 #bottom-logo {
 	height: 50px;
 	float: left;
@@ -598,9 +631,14 @@ footer a:hover {
     padding-bottom: 20px;
   }
 
+  #masthead-image h1 {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
   #headlines {
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
   }
 
   h3, .h3 {
