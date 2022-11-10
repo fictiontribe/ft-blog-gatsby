@@ -38,7 +38,7 @@ const Layout = ({ location, title, children }) => {
   
     tl
     // .to(".logo-top-image", { top: "15px", left: "15px" }, "logo")
-      .to(".header-logo", { scale: 0.52, ease: "Power2.out" }, "logo")
+      .to(".header-logo", { scale: 0.65, ease: "Power2.out" }, "logo")
       .to(".header-logo", { background: "#a55490", ease: "Power2.out" }, "logo-color")
       
     let tl2 = gsap.timeline({
