@@ -6,10 +6,10 @@ featuredimage:
   alt: "OpenSource Contributions"
 author:
   name: "Misha Petrov"
-  email: "stephen@fictiontribe.com"
+  email: "misha@fictiontribe.com"
   role: "Director of Technology"
   image:
-    src: "./misha-avatar.jpg"
+    src: "./avatar-misha.jpg"
     alt: "Misha Petrov"
 ogimage: 
   src: "./og-image.png"
@@ -21,18 +21,25 @@ Like all the other creators out there, the Fiction Tribe Development team uses a
 
 ## Here are the two recent additions to our OS library:
 
+[<img style="max-width: 100%; margin: 20px auto;" src="https://fictiontribe.com/os/webpack-boilerplate/og-boilerplate.jpg">](https://fictiontribe.com/os/webpack-boilerplate/)
+
 ### 1) Fiction Tribe Landing Page Boilerplate
-[<img style="max-width: 100%; margin: 20px auto;" src="https://demo.fictiontribe.com/Interactive/Interactive_Quizes/Host_Analytics-Personality_Quiz/ha-quiz.jpg">](https://demo.fictiontribe.com/Interactive/Interactive_Quizes/Host_Analytics-Personality_Quiz/#/intro)
+[<img style="" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/fictiontribe/ft-webpack-boilerplate)
+[<img style="width: 95px;" src="https://fictiontribe.com/os/ft-badge.svg">](https://fictiontribe.com/os/webpack-boilerplate)
+
 Simply, your last boilerplate. 
 If your work involves developing Landing Pages or simple interactive experiences for the web, you know how hard it is to find a well-rounded boilerplate to quickly KO development; the boilerplate based on the latest version of Webpack; the one that works well out of the box and isn't cluttered with unnecessary packages. 
 We've used our experience to put together this complete starter package, featuring some cool, reusable visual sugar that screams "inspired by Fiction Tribe." 
 
+
+[<img style="max-width: 100%; margin: 20px auto;" src="https://fictiontribe.com/os/assetcart/og-assetcart.jpg">](https://fictiontribe.com/os/assetcart/)
+
 ### 2) AssetCart.js 
-[<img style="max-width: 100%; margin: 20px auto;" src="https://demo.fictiontribe.com/Interactive/Interactive_Quizes/Host_Analytics-Personality_Quiz/ha-quiz.jpg">](https://demo.fictiontribe.com/Interactive/Interactive_Quizes/Host_Analytics-Personality_Quiz/#/intro)
+[<img style="" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/fictiontribe/AssetCart)
+[<img style="width: 95px;" src="https://fictiontribe.com/os/ft-badge.svg">](https://fictiontribe.com/os/assetcart/)
+
 For landing pages that offer multiple content assets as downloadables, we developed this Widget. It collects all linked assets with a class and adds an animation effect. 
 
 As a user scrolls through the page content, our Widget drops linked content into an asset cart for the user to view and download their collection of deeper content, while keeping the focus on the page. 
 This imitates e-commerce cart functionality to improve on-page engagement and form-fill conversion metrics with bundle downloads.
 
-Check out the links below to download or learn more:
-https://fictiontribe.com/os/
