@@ -12,7 +12,7 @@ author:
     src: "./avatar-misha.jpg"
     alt: "Misha Petrov"
 ogimage: 
-  src: "./opensource-og.jpg"
+  src: "./og.jpg"
   alt: "og"
 description: "The open-source community is one of the most important aspects of the modern world of programming and development. The ability to share code and ideas freely has led to some of the most amazing advances in technology in recent years. One of the best things about open source is that anyone can contribute."
 ---
