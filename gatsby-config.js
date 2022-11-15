@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Fiction Tribe Articles`,
+    title: `Scenes For An Accelerated Culture`,
     author: {
       name: `Fiction Tribe`,
-      summary: `Find Your Story.`,
+      summary: `Stories from Fiction Tribe`,
     },
-    description: `Find Your Story.`,
+    description: `Stories from Fiction Tribe`,
     siteUrl: `https://blog.fictiontribe.com/`,
     social: {
       twitter: `fictiontribe`,

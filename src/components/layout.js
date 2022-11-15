@@ -25,6 +25,20 @@ const Layout = ({ location, title, children }) => {
     )
   }
 
+  if (isRootPath) {
+    header = (
+      // <h1 className="main-heading">
+      <Link to="/">{title}</Link>
+      // </h1>
+    )
+  } else {
+    header = (
+      <Link className="header-link-home" to="/">
+        {title}
+      </Link>
+    )
+  }
+
   React.useEffect(() => {
     let tl = gsap.timeline({
       // yes, we can add it to an entire timeline!
@@ -73,7 +87,7 @@ const Layout = ({ location, title, children }) => {
               <div id="masthead-image" className="homepage">
                 <div id="headlines">
                   <h1>{header}</h1>
-                  <h2>Find Your Story.</h2>
+                  <h2>Stories from Fiction Tribe</h2>
                 </div>
               </div>
             </div>
