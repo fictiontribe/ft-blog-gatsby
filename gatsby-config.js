@@ -33,14 +33,10 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "314470500",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Defers execution of google analytics script after page load
-        defer: false,
+      },
+      pluginConfig: {
+        head: true,
+        anonymize_ip: true,
       },
     },
     {
