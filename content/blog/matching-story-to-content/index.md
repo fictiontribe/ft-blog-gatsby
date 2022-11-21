@@ -1,65 +1,35 @@
 ---
-title: Our Commitment Is Curiosity. Our Reputation Is Results.
-date: "2022-11-01T22:40:32.169Z"
+title: Matching Story to Content
+date: "2022-11-22T22:40:32.169Z"
 featuredimage:
   src: "./blog1.png"
-  alt: "Our Commitment Is Curiosity. Our Reputation Is Results."
+  alt: "Matching Story to Content"
 author:
-  name: "Mike Caplan"
-  role: "Chief Operating Officer"
-  email: "mike@fictiontribe.com | 503-954-2268"
+  name: "Russ Meyer"
+  role: "Creative Director"
+  email: "russ@fictiontribe.com"
   image:
     src: "./mike-avatar.jpg"
-    alt: "Mike Caplan"
+    alt: "Russ Meyer"
 ogimage: 
-  src: "./og-image.png"
+  src: "./og.jpg"
   alt: "og"
-description: Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, from NFTs to AR, and everything in between, to decide when (or if) it makes sense to incorporate them into our strategic marketing.
+description: Telling brands that good marketing is about storytelling is like saying that painting is about controlling light and color. It’s not wrong, but it doesn’t help you make it. Because the hard part, of course, is learning how. Well, to start you first have to have a familiarity with the tools at your disposal—specifically, what content works best for the type of story you’re trying to tell.
 ---
 
-## We help brands envision who they are, and what they’re becoming.
+Telling brands that good marketing is about storytelling is like saying that painting is about controlling light and color. It’s not wrong, but it doesn’t help you make it. Because the hard part, of course, is learning how. Well, to start you first have to have a familiarity with the tools at your disposal—specifically, what content works best for the type of story you’re trying to tell. Don’t worry, this isn’t another post about the buyer’s journey. It’s about what comes before that: building a fundamental understanding of what different assets look like, and what they do best. 
 
-`vimeo: https://vimeo.com/765883072`
+To inform that process, we created Matching Story to Content: Your Guide to Finding the Right Medium. By no means is it an exhaustive source of all content. A compendium like that is theoretical at best, since content can literally be anything. But it does cover the basics. And that’s where content strategy should always start. 
 
+Whether establishing a common language internally or creating a source of truth that guides conversations with clients, here are the three most important reasons to use this guide. 
 
-### Change is our creative fuel
+### Getting clients on the same page (of the same book)
+So, why is it important to take a step back and revisit how you define the “what and why” of content? Because we’re not all speaking the same language. What we think of as an infographic or an ebook—even a homepage—has become murky. And it’s causing some problems. For example, you’re in a meeting with a client, talking through content strategy. You suggest an infographic. “Let’s do it!” they say. “Great!” you say. Everyone is nodding. You start producing it and find out that they have no data—nothing with which to illustrate a narrative except words. (So many words.) Turns out what they thought of as an infographic is really a novel with some arrows. In short, these terms have started to morph into one-size-fits-all catchphrases. They’re beginning to lose their meaning and purpose. 
 
-Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, to help decode value from the buzz and decide when (or if) it makes sense to incorporate them into our clients’ strategic marketing.
+### Avoiding compounded confusion
+At Fiction Tribe, we noticed this “language barrier” becoming increasingly problematic. And not just with the more functional asset types—but with less tangible deliverables like concepts too. When we took a closer look, we realized that hints of confusion were starting before any content was even produced. From the very first conversations, through to scoping and statements of work, the same vague language was carrying through and allowing for too much open interpretation. And let’s just say, the time to find out that you and your client don’t have the same deliverable in mind is not when you’re presenting it. 
 
-That’s why our team hosts internal hackathons to dive into the realm of gaming, Web3, NFT wallets, to experiment with augmented reality, rewire customer databases, and more. It’s our aim to stay ahead of trends and assess their market viability. This first-hand knowledge helps us guide, inform and counsel, and inspire. Like the shark that suffocates if it stops moving, we endlessly pursue the practical “Knowledge of Now.” That’s the life-blood of our shop.
+### To keep from building a box before you know what goes in it
+These days, it’s not uncommon for clients to come to the table with a laundry list of assets they already think they need. This is good and bad. It’s good because, well… at least they’re thinking about it. It’s bad because they may not be as open as they could be to telling their story in new, different, and more potent ways. While it may be easier to just take their list as marching orders, agencies need to take the time to dig deeper and design with more focused intent. In other words, that ebook ultimately won’t perform well, because it should have been a video. 
 
-
-### Want to know what drives us? Here’s a short list: 
-
-- Creating refreshing work for world-class clients
-- Delivering measurable business value, not winning industry awards 
-- Making clients’ innovations shine with purposeful marketing 
-- Finding client’s North Star and building success through thoughtful alignment
-- Putting a well-deserved spotlight on our collaborators—both individuals and teams
-
-
-### Growth happens because of a desire to learn
-
-We’re only as good as the last project, campaign or initiative. Breaking new ground is an essential part of our approach to client strategy.
-
-Due diligence at the beginning of collaboration brings renewed perspectives to the ways we work. A flexible approach allows us to easily integrate proven production processes with clients’ needs. The result? Things get done faster, better, and at lower cost, because our clients are always at the center of what we do—and how we do it. 
-
-And time is dedicated to what matters most: the work.
-
-
-### Inspiration is built on trust and respect—with clients of all kinds.
-
-We strive to be experts. Sustainable partnerships shape the business, and we’re fearless when attacking the hard work required to do the best, smartest work. Our equally hard-working clients stick around through the years, often bringing us along as their roles evolve, and they help foster new relationships with recommendations to colleagues. 
-
-This is how success is measured. There is no gray area—no room for misinterpretation—and no running and hiding from it.
-
-First, our clients are incredibly passionate about what they do. They want to move the needle, and are open to both proven and new ways to get there. (No box-checkers in this crowd.) 
-
-Second, they rely on a partner that will both keep them informed on the latest tech, trends, and tactics, and also act as a responsible steward in helping them navigate ever-changing marketplace waters. 
-
-And third, if (or when) adversity hits—regardless of project or campaign—it’s dealt with directly. Always guided by respect, honesty, and transparency.
-
-
-### Brass tacks 
-
-All of these things are the requisite ingredients to moving our business—and our clients’—forward. It’s a philosophy you may hear from other agencies, but with Fiction Tribe you feel it. With every asset, on every call, our commitment and enthusiasm sits right on the surface. And the only hierarchy we subscribe to is elevating good ideas above what’s expected. What’s left is pure potential. 
+## Agree? Disagree? We’d love to hear your thoughts. 

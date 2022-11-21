@@ -12,7 +12,7 @@ author:
     src: "./kozik-avatar.jpg"
     alt: "Stephen Kozik"
 ogimage: 
-  src: "./og-image.png"
+  src: "./og.jpg"
   alt: "og"
 description: Professional huckster and amateur human being P.T. Barnum once famously said, “There’s no such thing as bad publicity.” While that certainly isn’t true, the takeaway is that the worst thing you can do is be boring. Indeed, the opposite of love isn’t hate—it’s indifference.
 ---

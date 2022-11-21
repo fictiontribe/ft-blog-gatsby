@@ -12,7 +12,7 @@ author:
     src: "./mike-avatar.jpg"
     alt: "Mike Caplan"
 ogimage: 
-  src: "./og-image.png"
+  src: "./og.jpg"
   alt: "og"
 description: Every day, there’s news of next-generation technology impacting markets—a special something that makes what we’re currently doing obsolete. That’s why it’s critical to take a close look at emerging technologies and applications, from NFTs to AR, and everything in between, to decide when (or if) it makes sense to incorporate them into our strategic marketing.
 ---
