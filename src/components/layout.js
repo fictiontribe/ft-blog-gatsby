@@ -104,6 +104,9 @@ const Layout = ({ location, title, children }) => {
             <div id="bottom-logo" className="col-6 col-md-9 col-lg-10">
               <a href="http://www.fictiontribe.com/">
                 <img src={logoWhite} class="logo" />
+              </a><br/>
+              <a class="text-center mx-2" href="http://www.fictiontribe.com/">
+                Visit our website
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 ms-auto col-6">
