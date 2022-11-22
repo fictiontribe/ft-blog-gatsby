@@ -100,7 +100,7 @@ a.cta-link:hover svg {
 </style>
 
 ### 1. Your whole team should be on the same page (of the same book)
-Here the problem: We’re not all speaking the same language. Whether it’s an ebook, infographic, or even a homepage, the interpretation of what those actually look like and what they’re supposed to do has become less clear. We’ve become so comfortable with the nomenclature that the functional understanding has taken a back seat. Keep reading to understand why this is a slippery slope.  
+Here's the problem: We’re not all speaking the same language. Whether it’s an ebook, infographic, or even a homepage, the interpretation of what those actually look like and what they’re supposed to do has become less clear. We’ve become so comfortable with the nomenclature that the functional understanding has taken a back seat. Keep reading to understand why this is a slippery slope.  
 
 ### 2. Gain clarity vs. compounding confusion
 At Fiction Tribe, we noticed this “language barrier” becoming increasingly problematic. And not just with the more functional asset types—but with less tangible deliverables (like concepts) too. When we took a closer look, we realized that the seeds of confusion were starting before any content was even produced. From the very first conversations, through to scoping and statements of work, everyone had a somewhat different idea of what defined the work. (Long story short: The time to find out you and your client don’t have the same deliverable in mind is not when you’re presenting it.) 
