@@ -21,7 +21,7 @@ description: You’ve heard that good marketing is about telling a story. But th
 
 You’ve heard that good marketing is about telling a story. But that’s like saying the key to painting beautifully is controlling light and color. It’s not incorrect, but that knowledge alone doesn’t make you better at creating it. The hard part, of course, is learning how. Well, to start, you first have to have a familiarity with the tools at your disposal—specifically, what content works best for the type of story you’re trying to tell. And no, this isn’t another post about the buyer’s journey. It’s about what comes before that: building a fundamental understanding of what different assets look like, and what they do best—and being conscious of the potential pitfalls of simply “making it like the last one”    
  
-To inform that process, we created <a href="https://blog.fictiontribe.com/assets/FictionTribe-asset-guide.pdf" target="_blank">Matching Content to Story: Your Guide to Finding the Right Medium.</a> By no means is it an exhaustive source of all content. A compendium like that is theoretical at best, since “content” can literally be anything. But it does revisit some of the most tried and true assets we know and love (and maybe some we’ve come to hate) in an attempt to remove confusion and refocus your content creation and increase its potency.
+To inform that process, we created <a href="https://blog.fictiontribe.com/assets/FictionTribe-asset-guide.pdf" target="_blank">Matching Story to Content: Your Guide to Finding the Right Medium.</a> By no means is it an exhaustive source of all content. A compendium like that is theoretical at best, since “content” can literally be anything. But it does revisit some of the most tried and true assets we know and love (and maybe some we’ve come to hate) in an attempt to remove confusion and refocus your content creation and increase its potency.
 
 <div class="asset-flex row align-items-center">
   <div class="asset-flex-left col-12 col-md-12 col-lg-5 col-xl-4">
@@ -111,4 +111,4 @@ It’s not uncommon to reflexively “build another one.” But content types ar
 ### This is only a start
 With trends, technology and audiences constantly changing, content will continue to evolve too. But the fundamental reason people consume content will stay the same: To be engaged and to learn something. It’s our hope this guide can serve as a starting point for finding the best ways to meet those needs. 
 
-<a href="https://blog.fictiontribe.com/assets/FictionTribe-asset-guide.pdf" target="_blank">Download Matching Content to Story: Your Guide to Finding the Right Medium.</a>
+<a href="https://blog.fictiontribe.com/assets/FictionTribe-asset-guide.pdf" target="_blank">Download Matching Story to Content: Your Guide to Finding the Right Medium.</a>
