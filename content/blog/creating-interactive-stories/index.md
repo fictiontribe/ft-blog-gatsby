@@ -22,10 +22,15 @@ With every new project, the Fiction Tribe development team’s focus is to alway
 We recently had the opportunity to create a web-based browser game. In this game,the user can point and click to explore a virtual, retro version of our office in Portland, Oregon. Along the way, users can chat with virtual versions of Fiction Tribe staff, and play lighthearted minigames.
 
 In this article, we will dive deeper into the concept, technology, and development process for our web game.
-<div style="width: 100%; margin-bottom: 25px;">
-  <img src="game-1.png" alt="Screenshot of Fiction Tribe Office Loading Screen"></img>
+
+<div class="asset-flex row align-items-center">
+  <div class="asset-flex-left col-12 col-md-12 col-lg-5 col-xl-4">
+    <img class="cta-img img-fluid" src="./game-btn.png"/>
+  </div>
+  <div class="asset-flex-right col-12 col-md-12 col-lg-7 col-xl-8">
+    <a class="cta-link" href="https://fictiontribe.com?game" target="_blank">Play the game <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="#000000"></path> </svg></a>
+  </div>
 </div>
-<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">The Fiction Tribe Office Load Screen</div>
 
 
 ### Conceptualizing the Fiction Tribe Office
@@ -69,14 +74,76 @@ We supplemented our 2D world tooling with Tiled Map Editor, a free, open source,
 
 Working from inside the browser has other benefits: We can overlay regular HTML elements. We utilized this for our final screen, in addition to building a virtual version of a portable game console with interactive buttons for moving the game character and interacting with the game world.
 
-<div style="width: 100%; margin-bottom: 25px;">
-  <img src="game-4.png" alt="Screeenshot of the Fiction Tribe Office Overworld"></img>
-</div>
-<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">The Fiction Tribe Office Overworld</div>
-
-
 ### Try it Now
 
 We have an early version of the game’s build currently live on our studio site. The game features three minigames and a virtual office full of quirky NPCs to chat with. 
 
-<a target="_blank" href="https://fictiontribe.com/?game">Check it out here</a>
+
+<style>
+.asset-flex {
+  display: flex;
+  margin: 0 auto 32px auto;
+  padding: 28px 0;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .asset-flex {
+    width: 100%;
+  }
+}
+.asset-flex-left {
+  position: relative;
+  overflow: hidden;
+}
+.asset-flex-right {
+  position: relative;
+  /* min-width: 50%; */
+}
+img.cta-img {
+  position: relative;
+  max-height: 320px;
+  /* max-width: 200px; */
+  /* width: auto;
+  height: auto;  */
+}
+a.cta-link {
+  font-family: "Gilroy-ExtraBold", Sans-Serif;
+  font-weight: normal;
+  /* margin-left: 20px; */
+  font-size: calc(1.275rem + 1.5vw);
+  /* font-size: 42px; */
+  border-bottom: 3px solid #00f0ff;
+  /* position: absolute; */
+  /* top: 50%;
+  width: 100%;
+  transform: translateY(-50%); */
+}
+@media (max-width: 544px) {
+  a.cta-link {
+    font-size: calc(1.075rem + 1.5vw);
+  }
+}
+@media (min-width: 1080px) {
+  a.cta-link {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  a.cta-link {
+    font-size: 2.3rem;
+  }
+}
+a.cta-link svg {
+  transition: 0.45s all;
+    transform: translateX(-2px);
+}
+a.cta-link:hover svg {
+  transform: translateX(10px);
+}
+</style>
+
+<a target="_blank" href="https://fictiontribe.com/?game">Play the Ficton Tribe Office Game</a>
