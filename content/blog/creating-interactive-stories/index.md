@@ -24,7 +24,7 @@ We recently had the opportunity to create a web-based browser game. In this game
 In this article, we will dive deeper into the concept, technology, and development process for our web game.
 
 <div style="width: 100%; margin-bottom: 25px;">
-  <img src="image4.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+  <a class="cta-link" href="https://fictiontribe.com?game" target="_blank"><img src="image4.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img></a>
 </div>
 
 ### Conceptualizing the Fiction Tribe Office
