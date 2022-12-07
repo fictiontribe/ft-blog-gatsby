@@ -24,7 +24,7 @@ We recently had the opportunity to create a web-based browser game. In this game
 In this article, we will dive deeper into the concept, technology, and development process for our web game.
 
 <div style="width: 100%; margin-bottom: 25px;">
-  <img src="game-1.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+  <img src="image4.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
 </div>
 
 ### Conceptualizing the Fiction Tribe Office
@@ -34,9 +34,9 @@ The core mechanic for the Fiction Tribe Office is a “mad libs” style game. M
 The game world is a retro, interactive version of our studio office. The NPCs (non-playable characters) are simply pixelated versions of the staff at Fiction Tribe. Each character has three words, a noun, a verb, and an adjective. As part of this fun exercise, each coworker in our office provided their own virtual character’s words.
 
 <div style="width: 100%; margin-bottom: 25px;">
-  <img src="screen-4.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+  <img src="image1.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
 </div>
-<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Interacting with Ficton Tribe Office NPCs</div>
+<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">In-game character sprites</div>
 
 
 ### Choosing Technology
@@ -56,7 +56,7 @@ Unity is the C#-based heavy-hitting engine used for much of modern game developm
 We ended up choosing Phaser 3, which is a JavaScript-based open source game framework that offers many of the aforementioned systems one would desire in 2D game development including tilemaps, asset loading, sound support, advanced input support, and scale managers. It is built on a version of PixiJS, supports WebGL, and canvas-based rendering.
 
 <div style="width: 100%; margin-bottom: 25px;">
-  <img src="game-3.png" alt="Screenshot of Phaser 3 HTML5 Game Framework"></img>
+  <img src="game-3.jpeg" alt="Screenshot of Phaser 3 HTML5 Game Framework"></img>
 </div>
 <div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Phaser 3 HTML5 Game Framework</div>
 
@@ -74,7 +74,7 @@ Our creative team regularly provided art assets to the Development team in the f
 We visually built our virtual world as mentioned earlier by meticulously placing each 30x30px tiles in the Tiled Map Editor. When finished, we exported this map data for integration with Phaser. Tiled map files are exported as JSON (Javascript Object Notation) files, a simple and extremely popular data interchange format that allows the sharing of object data through a collection of key values.
 
 <div style="width: 100%; margin-bottom: 25px;">
-  <img src="screen-4.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+  <img src="screen-4.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
 </div>
 <div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Interacting with Ficton Tribe Office NPCs</div>
 
