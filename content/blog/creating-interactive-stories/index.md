@@ -19,7 +19,7 @@ description: With every new project, the Fiction Tribe development team’s focu
 
 With every new project, the Fiction Tribe development team’s focus is to always create great user experiences. On a project-by-project basis, we determine the right technologies that will allow us to create performant, scalable web experiences. We love to develop unique products and approach challenging projects in different ways. There are no limits: A new project may come to us as a mobile app, landing page, an interactive web component, or even a full-fledged gaming experience. 
 
-We recently had the opportunity to create a web-based browser game. In this game,the user can point and click to explore a virtual, retro version of our office in Portland, Oregon. Along the way, users can chat with virtual versions of Fiction Tribe staff, and play lighthearted minigames.
+We recently had the opportunity to create a web-based browser game. In this game, the user can point and click to explore a virtual, retro version of our office in Portland, Oregon. Along the way, users can chat with virtual versions of Fiction Tribe staff, and play lighthearted minigames.
 
 In this article, we will dive deeper into the concept, technology, and development process for our web game.
 
