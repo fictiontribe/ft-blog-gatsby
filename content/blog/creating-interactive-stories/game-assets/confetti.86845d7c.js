@@ -413,4 +413,4 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
   }(), e, !1), t.confetti = e.exports;
 }(window, {});
 },{}]},{},["sI4j"], null)
-//# sourceMappingURL=/confetti.86845d7c.js.map
+//# sourceMappingURL=confetti.86845d7c.js.map

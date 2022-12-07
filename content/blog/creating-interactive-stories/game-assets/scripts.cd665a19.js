@@ -5951,7 +5951,13 @@ document.querySelector('.fiction-boy_dpad-up').addEventListener('mousedown', fun
     'keyCode': 38
   }));
 });
-document.querySelector('.fiction-boy_dpad-up').addEventListener('mouseup' && 'mouseout', function () {
+document.querySelector('.fiction-boy_dpad-up').addEventListener('mouseup', function () {
+  window.dispatchEvent(new KeyboardEvent('keyup', {
+    'keyCode': 38
+  }));
+  document.querySelector('.fiction-boy').classList.remove('dpad-up');
+});
+document.querySelector('.fiction-boy_dpad-up').addEventListener('mouseout', function () {
   window.dispatchEvent(new KeyboardEvent('keyup', {
     'keyCode': 38
   }));
@@ -5964,7 +5970,13 @@ document.querySelector('.fiction-boy_dpad-down').addEventListener('mousedown', f
     'keyCode': 40
   }));
 });
-document.querySelector('.fiction-boy_dpad-down').addEventListener('mouseup' && 'mouseout', function () {
+document.querySelector('.fiction-boy_dpad-down').addEventListener('mouseup', function () {
+  window.dispatchEvent(new KeyboardEvent('keyup', {
+    'keyCode': 40
+  }));
+  document.querySelector('.fiction-boy').classList.remove('dpad-down');
+});
+document.querySelector('.fiction-boy_dpad-down').addEventListener('mouseout', function () {
   window.dispatchEvent(new KeyboardEvent('keyup', {
     'keyCode': 40
   }));
@@ -5977,7 +5989,13 @@ document.querySelector('.fiction-boy_dpad-left').addEventListener('mousedown', f
     'keyCode': 37
   }));
 });
-document.querySelector('.fiction-boy_dpad-left').addEventListener('mouseup' && 'mouseout', function () {
+document.querySelector('.fiction-boy_dpad-left').addEventListener('mouseup', function () {
+  window.dispatchEvent(new KeyboardEvent('keyup', {
+    'keyCode': 37
+  }));
+  document.querySelector('.fiction-boy').classList.remove('dpad-left');
+});
+document.querySelector('.fiction-boy_dpad-left').addEventListener('mouseout', function () {
   window.dispatchEvent(new KeyboardEvent('keyup', {
     'keyCode': 37
   }));
@@ -5990,7 +6008,13 @@ document.querySelector('.fiction-boy_dpad-right').addEventListener('mousedown', 
     'keyCode': 39
   }));
 });
-document.querySelector('.fiction-boy_dpad-right').addEventListener('mouseup' && 'mouseout', function () {
+document.querySelector('.fiction-boy_dpad-right').addEventListener('mouseup', function () {
+  window.dispatchEvent(new KeyboardEvent('keyup', {
+    'keyCode': 39
+  }));
+  document.querySelector('.fiction-boy').classList.remove('dpad-right');
+});
+document.querySelector('.fiction-boy_dpad-right').addEventListener('mouseout', function () {
   window.dispatchEvent(new KeyboardEvent('keyup', {
     'keyCode': 39
   }));
@@ -6017,45 +6041,118 @@ document.querySelector('.fiction-boy_start-btn').addEventListener('click', funct
 }); // Modal / Open button
 
 document.querySelector(".ft-game-open-btn").addEventListener('click', function () {
-  // document.querySelector(".fiction-boy").classList.remove("hidden")
-  // document.querySelector(".ft-game-wrapper").classList.remove("hidden")
-  // document.querySelector(".site-overlay").classList.add("active")
-  document.querySelector(".site-overlay").classList.add("active");
+  var desktopOnly = window.matchMedia("(min-width: 1080px)");
 
-  _gsap.gsap.to(document.querySelector(".ft-game-open-btn"), {
-    xPercent: -50,
-    left: "50%",
-    yPercent: -50,
-    top: "50%",
-    scale: 10,
-    duration: 0.75 // opacity: 0
+  if (desktopOnly.matches) {
+    // if (typeof jQuery !== 'undefined') {
+    // $.fn.fullpage.setKeyboardScrolling(false); // }
+    // document.querySelector(".fiction-boy").classList.remove("hidden")
+    // document.querySelector(".ft-game-wrapper").classList.remove("hidden")
+    // document.querySelector(".site-overlay").classList.add("active")
 
-  });
+    _gsap.gsap.to(document.querySelector(".ft-game-open-btn"), {
+      xPercent: -50,
+      left: "50%",
+      yPercent: -50,
+      top: "45%",
+      clearProps: true,
+      onComplete: function onComplete() {
+        setTimeout(function () {
+          document.querySelector(".ft-game-open-btn").style.opacity = 0;
+        }, 50);
+      },
+      scale: 9,
+      duration: 0.75 // opacity: 0
 
-  setTimeout(function () {
-    document.querySelector(".fiction-boy").classList.remove("hidden");
-    document.querySelector(".ft-game-wrapper").classList.remove("hidden");
-  }, 750);
+    });
+
+    document.querySelector(".ft-game-open-btn").classList.add("active");
+    document.querySelector(".site-overlay").classList.add("active");
+    setTimeout(function () {
+      document.querySelector(".fiction-boy").classList.remove("hidden");
+      document.querySelector(".ft-game-wrapper").classList.remove("hidden");
+    }, 750);
+  }
 }); // Modal / Close button
 
 document.querySelector(".site-overlay").addEventListener('click', function () {
-  alert('hello');
+  // if (typeof jQuery !== 'undefined') {
+  // $.fn.fullpage.setKeyboardScrolling(true); // }
+
   document.querySelector(".site-overlay").classList.remove("active");
 
   _gsap.gsap.to(document.querySelector(".ft-game-open-btn"), {
-    xPercent: -50,
-    right: 40,
-    yPercent: -50,
-    bottom: 50,
+    left: "94%",
+    top: "90%",
     scale: 1,
-    duration: 0.75 // opacity: 0
-
+    duration: 0.5,
+    clearProps: true,
+    transformOrigin: "center",
+    opacity: 1
   });
 
+  document.querySelector(".ft-game-wrapper").classList.add("hidden");
+  document.querySelector(".fiction-boy").classList.add("hidden");
   setTimeout(function () {
-    document.querySelector(".fiction-boy").classList.add("hidden");
-    document.querySelector(".ft-game-wrapper").classList.add("hidden");
+    document.querySelector(".ft-game-open-btn").classList.remove("active");
+    document.querySelector(".ft-game-open-btn").classList.style.opacity = 1;
   }, 750);
 });
+document.querySelector("#game-close-btn").addEventListener('click', function () {
+  var desktopOnly = window.matchMedia("(min-width: 1080px)");
+
+  if (desktopOnly.matches) {
+    // if (typeof jQuery !== 'undefined') {
+    // $.fn.fullpage.setKeyboardScrolling(true); // }
+
+    document.querySelector(".end-screen").classList.remove("active");
+
+    _gsap.gsap.to(document.querySelector(".ft-game-open-btn"), {
+      left: "94%",
+      top: "90%",
+      scale: 1,
+      duration: 0.5,
+      clearProps: true,
+      transformOrigin: "center",
+      opacity: 1
+    });
+
+    document.querySelector(".end-screen").classList.add("hidden");
+    document.querySelector(".ft-game-wrapper").classList.add("hidden");
+    document.querySelector(".game-footer").classList.add("hidden");
+    document.querySelector("#ft-game-header").classList.add("hidden");
+    document.querySelector(".end-screen-wrapper").classList.add("hidden");
+    document.querySelector(".fiction-boy").classList.add("hidden");
+    setTimeout(function () {
+      document.querySelector(".ft-game-open-btn").classList.remove("active");
+      document.querySelector(".ft-game-open-btn").classList.style.opacity = 1;
+    }, 750);
+  }
+}); // document.addEventListener("DOMContentLoaded", () => {
+
+setTimeout(function () {
+  console.log("click game button");
+  document.querySelector(".ft-game-open-btn").click();
+}, 500); // });
+// var confetti = document.createElement('script');
+// confetti.onload = function () {
+// };
+// confetti.src = "../game/confetti.86845d7c.js";
+// var pixelated = document.createElement('script');
+// pixelated.onload = function () {
+// };
+// pixelated.src = "../game/pixelated.43a30f09.js";
+// var gameMain = document.createElement('script');
+// gameMain.onload = function () {
+// };
+// gameMain.src = "../game/main.c39d6dcf.js";
+// var gameScripts = document.createElement('script');
+// gameScripts.onload = function () {
+// };
+// gameScripts.src = "../game/scripts.cd665a19.js";
+// document.head.appendChild(confetti); 
+// document.head.appendChild(gameMain); 
+// document.head.appendChild(gameScripts); 
+// document.head.appendChild(pixelated);
 },{"gsap":"TpQl"}]},{},["VJtr"], null)
-//# sourceMappingURL=/scripts.cd665a19.js.map
+//# sourceMappingURL=scripts.cd665a19.js.map
