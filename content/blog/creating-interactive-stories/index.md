@@ -27,6 +27,13 @@ In this article, we will dive deeper into the concept, technology, and developme
   <a class="cta-link" href="https://fictiontribe.com?game" target="_blank"><img src="image4.jpeg" alt="Screenshot of Fiction Tribe Office Character Sprites"></img></a>
 </div>
 
+<div class="asset-flex row align-items-left" style="margin-left:0;">
+  <div class="asset-flex-right col-12 col-md-12 col-lg-12 col-xl-12" style="padding-left:0;">
+    <a class="cta-link" href="https://fictiontribe.com?game" target="_blank">Let's Play!<svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="#000000"></path> </svg></a>
+  </div>
+</div>
+
+
 ### Conceptualizing the Fiction Tribe Office
 
 The core mechanic for the Fiction Tribe Office is a “mad libs” style game. Mad libs is a game where players are presented a story with missing, “fill in the blank” words, and they must substitute the missing words. Upon beginning our web game, the system randomly selects one of several stories to be completed. The player obtains words to fill in the story’s blanks by completing minigames and speaking with in-game characters. Upon completing the three main minigames, the story is revealed to the player.
@@ -84,7 +91,7 @@ Each minigame, the game overworld, preloader, and overlay interface itself all a
 
 Phaser 3 scenes have their own life cycles, which are the stages each scene is subject to. These include stages for what happens when a new scene is first loaded (the Preload method), when the scene is launched (the Create method), and for while the Scene is running (the Update method). This allows developers to manage when assets are loaded, what happens when a scene is booted (e.g, add a player to the game world), and what continuously happens during the extent that a scene is running.
 
-### Try it Now
+### Try a Beta Now
 
 We have an early version of the game’s build currently live on our studio site. The game features three minigames and a virtual office full of quirky NPCs to chat with. 
 
