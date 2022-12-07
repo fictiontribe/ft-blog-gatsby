@@ -12,7 +12,7 @@ author:
     src: "./connor-avatar.jpg"
     alt: "Connor Burgess"
 ogimage: 
-  src: "./og.jpg"
+  src: "./og.jpeg"
   alt: "og"
 description: With every new project, the Fiction Tribe development team’s focus is to always create great user experiences. On a project-by-project basis, we determine the right technologies that will allow us to create performant, scalable web experiences. We love to develop unique products and approach challenging projects in different ways.
 ---
@@ -23,15 +23,9 @@ We recently had the opportunity to create a web-based browser game. In this game
 
 In this article, we will dive deeper into the concept, technology, and development process for our web game.
 
-<div class="asset-flex row align-items-center">
-  <div class="asset-flex-left col-12 col-md-12 col-lg-5 col-xl-4">
-    <img class="cta-img img-fluid" src="./game-btn.png"/>
-  </div>
-  <div class="asset-flex-right col-12 col-md-12 col-lg-7 col-xl-8">
-    <a class="cta-link" href="https://fictiontribe.com?game" target="_blank">Play the game <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="#000000"></path> </svg></a>
-  </div>
+<div style="width: 100%; margin-bottom: 25px;">
+  <img src="game-1.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
 </div>
-
 
 ### Conceptualizing the Fiction Tribe Office
 
@@ -39,11 +33,10 @@ The core mechanic for the Fiction Tribe Office is a “mad libs” style game. M
 
 The game world is a retro, interactive version of our studio office. The NPCs (non-playable characters) are simply pixelated versions of the staff at Fiction Tribe. Each character has three words, a noun, a verb, and an adjective. As part of this fun exercise, each coworker in our office provided their own virtual character’s words.
 
-  <div style="width: 100%; margin-bottom: 25px;">
-    <img src="screen-4.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
-  </div>
-  <div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Interacting with Ficton Tribe Office NPCs</div>
-
+<div style="width: 100%; margin-bottom: 25px;">
+  <img src="screen-4.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+</div>
+<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Interacting with Ficton Tribe Office NPCs</div>
 
 
 ### Choosing Technology
@@ -74,9 +67,35 @@ We supplemented our 2D world tooling with Tiled Map Editor, a free, open source,
 
 Working from inside the browser has other benefits: We can overlay regular HTML elements. We utilized this for our final screen, in addition to building a virtual version of a portable game console with interactive buttons for moving the game character and interacting with the game world.
 
+### Fiction Tribe Office Development
+
+Our creative team regularly provided art assets to the Development team in the form of sprites, sprite sheets, and simple design documents to illustrate how the virtual office should be built. 
+
+We visually built our virtual world as mentioned earlier by meticulously placing each 30x30px tiles in the Tiled Map Editor. When finished, we exported this map data for integration with Phaser. Tiled map files are exported as JSON (Javascript Object Notation) files, a simple and extremely popular data interchange format that allows the sharing of object data through a collection of key values.
+
+<div style="width: 100%; margin-bottom: 25px;">
+  <img src="screen-4.png" alt="Screenshot of Fiction Tribe Office Character Sprites"></img>
+</div>
+<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">Interacting with Ficton Tribe Office NPCs</div>
+
+Each sprite was compiled into a texture atlas. A texture atlas is an image containing multiple smaller images (which can be of varying sizes) intelligently packed together to reduce overall size. We utilized these in Tiled, and inside Phaser they were utilized to create animations in our game world.
+
+Each minigame, the game overworld, preloader, and overlay interface itself all are considered separate “scenes” within the Phaser 3 framework. A scene leverages object-oriented programming class structure and utilizes inheritance to extend the base Phaser Scene class. It has its own encapsulated instance of Phaser “scene level” systems. These systems include game cameras, input, sound, textures, and animations.
+
+Phaser 3 scenes have their own life cycles, which are the stages each scene is subject to. These include stages for what happens when a new scene is first loaded (the Preload method), when the scene is launched (the Create method), and for while the Scene is running (the Update method). This allows developers to manage when assets are loaded, what happens when a scene is booted (e.g, add a player to the game world), and what continuously happens during the extent that a scene is running.
+
 ### Try it Now
 
 We have an early version of the game’s build currently live on our studio site. The game features three minigames and a virtual office full of quirky NPCs to chat with. 
+
+<div class="asset-flex row align-items-center">
+  <div class="asset-flex-left col-12 col-md-12 col-lg-5 col-xl-4">
+    <img class="cta-img img-fluid" src="./game-btn.png"/>
+  </div>
+  <div class="asset-flex-right col-12 col-md-12 col-lg-7 col-xl-8">
+    <a class="cta-link" href="https://fictiontribe.com?game" target="_blank">Play the game <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="#000000"></path> </svg></a>
+  </div>
+</div>
 
 
 <style>
@@ -145,5 +164,3 @@ a.cta-link:hover svg {
   transform: translateX(10px);
 }
 </style>
-
-<a target="_blank" href="https://fictiontribe.com/?game">Play the Ficton Tribe Office Game</a>
