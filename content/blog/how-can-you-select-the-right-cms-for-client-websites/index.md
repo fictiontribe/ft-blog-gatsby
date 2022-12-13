@@ -12,7 +12,7 @@ author:
     src: "./avatar-misha.jpg"
     alt: "Misha Petrov"
 ogimage: 
-  src: "./og.jpg"
+  src: "./og.jpeg"
   alt: "og"
 description: "When our development team receives a request to redesign a website, or build one from scratch, a frequent first question from clients is, “What backend technology stack or CMS do we use?” Back in the day, the choice was very easy—WordPress (almost always). Now the landscape has changed, and the web software market today has much more to offer."
 ---
@@ -192,15 +192,14 @@ Despite being our favorite, like with any other solution, we still have a breakd
     
 -   No existing plugins to automate the localization workflow with a translation agency
     
+**We built the new digital brand experience for Cisco Investments using Statamic.**
 
 <a href="https://ciscoinvestments.com/" target="_blank"><div style="width: 100%; margin-bottom: 25px;">
   <img src="image2.jpeg" alt="An example website running Statamic"></img>
 </div></a>
-<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">https://ciscoinvestments.com/</div>
 
-**We built the new digital brand experience for Cisco Investments using Statamic.**
 
-**Check it out at [https://www.ciscoinvestments.com/](https://www.ciscoinvestments.com/)**
+[https://www.ciscoinvestments.com/](https://www.ciscoinvestments.com/)
 
 
 ### WordPress
@@ -248,12 +247,13 @@ WordPress might seem like a cry from the past but that's not the case. It’s co
 
   
 
-**An example website running WordPress is at [https://sweetango.com/](https://sweetango.com/)**
+**An example website running WordPress**
 
 <a href="https://sweetango.com/" target="_blank"><div style="width: 100%; margin-bottom: 25px;">
   <img src="image1.jpeg" alt="An example website running WordPress"></img>
 </div></a>
-<div style="text-align: center; margin-bottom: 50px; font-size: 18px;">https://sweetango.com/</div>
+
+[https://sweetango.com/](https://sweetango.com/)
 
 
 ### Headless CMS
@@ -440,5 +440,8 @@ a.glow-on-hover-img {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+span.gatsby-resp-image-wrapper {
+    margin-left: 0 !important;
 }
 </style>
