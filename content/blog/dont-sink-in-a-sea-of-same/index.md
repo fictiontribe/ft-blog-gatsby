@@ -54,6 +54,33 @@ It’s important to question everything, take nothing for granted, and seek a se
 “Keep it simple” doesn’t just apply to UI—it applies to everything. Time is the most valuable commodity for buyers, and if you are wasting it, you’re wasting an opportunity to get to the “shut up and take my money” part.
 
 
+<div class="ft-cta-form">
+  <p class="form-cta">Learn how Fiction Tribe can help you achieve your goals</p>
+  <!-- modify this form HTML and place wherever you want your form -->
+  <form id="form-cta"
+    action="https://formspree.io/f/moqregjy"
+    method="POST"
+  >
+    <div class="form-flex">
+      <div class="form-item">
+        <label>
+          Name:
+        </label>
+        <input type="text" name="lastname">
+      </div>
+      <div class="form-item">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email">
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="my-form-status"></p>
+    <!-- your other form fields go here -->
+  </form>
+</div>
+
 
 ### Give them the nectar of newness
 

@@ -141,6 +141,33 @@ The answer to our question regarding localization is also very important, as the
 
 This just skims the surface of the considerations we take when choosing a CMS. As you can see, there are a lot of factors to assess when choosing an appropriate technology to drive the site.
 
+<div class="ft-cta-form">
+  <p class="form-cta">Learn how Fiction Tribe can help you achieve your goals</p>
+  <!-- modify this form HTML and place wherever you want your form -->
+  <form id="form-cta"
+    action="https://formspree.io/f/moqregjy"
+    method="POST"
+  >
+    <div class="form-flex">
+      <div class="form-item">
+        <label>
+          Name:
+        </label>
+        <input type="text" name="lastname">
+      </div>
+      <div class="form-item">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email">
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="my-form-status"></p>
+    <!-- your other form fields go here -->
+  </form>
+</div>
+
 ## Now let's dive into each of our favorite tech stacks and look at their pros and cons.
 
   

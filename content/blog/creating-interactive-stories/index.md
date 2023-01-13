@@ -74,6 +74,33 @@ We supplemented our 2D world tooling with Tiled Map Editor, a free, open source,
 
 Working from inside the browser has other benefits: We can overlay regular HTML elements. We utilized this for our final screen, in addition to building a virtual version of a portable game console with interactive buttons for moving the game character and interacting with the game world.
 
+<div class="ft-cta-form">
+  <p class="form-cta">Learn how Fiction Tribe can help you achieve your goals</p>
+  <!-- modify this form HTML and place wherever you want your form -->
+  <form id="form-cta"
+    action="https://formspree.io/f/moqregjy"
+    method="POST"
+  >
+    <div class="form-flex">
+      <div class="form-item">
+        <label>
+          Name:
+        </label>
+        <input type="text" name="lastname">
+      </div>
+      <div class="form-item">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email">
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="my-form-status"></p>
+    <!-- your other form fields go here -->
+  </form>
+</div>
+
 ### Fiction Tribe Office Development
 
 Our creative team regularly provided art assets to the Development team in the form of sprites, sprite sheets, and simple design documents to illustrate how the virtual office should be built. 

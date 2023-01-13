@@ -108,6 +108,33 @@ At Fiction Tribe, we noticed this “language barrier” becoming increasingly p
 ### 3. Keep from building the box before you know what goes in it
 It’s not uncommon to reflexively “build another one.” But content types are different for a reason. Editorial is different from data visualization, for example. Maybe you can’t tell your story. You need to show it. The opposite is also true: Data is seldom able to tell a story in isolation. You need a layer of context and implication. Again, different asset types are different for a reason. By getting clear on form and function, you can build the best asset the best way. In short, concentrate on the story you’re trying to tell, then figure out the best content for telling it—not the other way around.
 
+<div class="ft-cta-form">
+  <p class="form-cta">Learn how Fiction Tribe can help you achieve your goals</p>
+  <!-- modify this form HTML and place wherever you want your form -->
+  <form id="form-cta"
+    action="https://formspree.io/f/moqregjy"
+    method="POST"
+  >
+    <div class="form-flex">
+      <div class="form-item">
+        <label>
+          Name:
+        </label>
+        <input type="text" name="lastname">
+      </div>
+      <div class="form-item">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email">
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="my-form-status"></p>
+    <!-- your other form fields go here -->
+  </form>
+</div>
+
 ### This is only a start
 With trends, technology and audiences constantly changing, content will continue to evolve too. But the fundamental reason people consume content will stay the same: To be engaged and to learn something. It’s our hope this guide can serve as a starting point for finding the best ways to meet those needs. 
 

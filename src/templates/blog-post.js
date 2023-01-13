@@ -2,13 +2,12 @@ import * as React from "react"
 import { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import { useForm, ValidationError } from '@formspree/react';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Video from "../components/video"
-
-import { css } from "@emotion/react"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -21,8 +20,41 @@ const BlogPostTemplate = ({
   const ogImagePath = post.frontmatter?.ogimage?.src.childImageSharp.fixed.src
   const [postData, setPostData] = useState(post);
 
+  function setForm() {
+    var form = document.getElementById("form-cta");
+    async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+    }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        }
+      })
+    }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+    }
+    form.addEventListener("submit", handleSubmit)
+  }
+
   useEffect(() => {
     setPostData(post);
+    setForm();
   }, [post])
 
   return (
@@ -69,7 +101,6 @@ const BlogPostTemplate = ({
               />
               <hr />
               <footer>
-
               </footer>
             </div>
             <div id="next-prev" className="row">

@@ -168,3 +168,30 @@ a.glow-on-hover-img {
     100% { background-position: 0 0; }
 }
 </style>
+
+<div class="ft-cta-form">
+  <p class="form-cta">Learn how Fiction Tribe can help you achieve your goals</p>
+  <!-- modify this form HTML and place wherever you want your form -->
+  <form id="form-cta"
+    action="https://formspree.io/f/moqregjy"
+    method="POST"
+  >
+    <div class="form-flex">
+      <div class="form-item">
+        <label>
+          Name:
+        </label>
+        <input type="text" name="lastname">
+      </div>
+      <div class="form-item">
+        <label>
+          Email:
+        </label>
+        <input type="email" name="email">
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="my-form-status"></p>
+    <!-- your other form fields go here -->
+  </form>
+</div>
