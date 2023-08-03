@@ -27,11 +27,8 @@ To better illustrate, here's a [demo Google Web Story](https://ft-webstory.surge
 <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
 <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css"/>
 
-<amp-story-player class="amp-player-wrapper" style="width: 370px; height: 622px; margin-bottom: 60px;">
-  <a href="https://ft-webstory.surge.sh">
-    <img src="/assets/story-4-cover.jpg" loading="lazy" data-amp-story-player-poster-img width="370" height="622"></img>
-  </a>
-</amp-story-player>
+<iframe class="amp-player-wrapper" sandbox="allow-same-origin allow-forms allow-scripts"
+        src="https://ft-webstory.surge.sh"></iframe>
 
 ## Why Choose Google Web Stories?
 
@@ -47,11 +44,13 @@ TechCrunch notes, "Web Stories are designed to be snackable and fun to consume, 
 4. **Boosted Search Rankings:** Google Web Stories can help you secure prime positions in search results, enhancing organic traffic and sales. 
 
 As an example, check out this [Fintech Web Story](https://aws.fortigatecnf.com/fintech-webstory) we created for Fortinet.
-<amp-story-player class="amp-player-wrapper" style="width: 370px; height: 622px; margin-bottom: 60px;">
+<!-- <amp-story-player class="amp-player-wrapper" style="width: 370px; height: 622px; margin-bottom: 60px;">
   <a href="https://aws.fortigatecnf.com/fintech-webstory">
     <img src="/assets/story-fortinet-cover.jpg" loading="lazy" data-amp-story-player-poster-img width="370" height="622"></img>
   </a>
-</amp-story-player>
+</amp-story-player> -->
+<iframe class="amp-player-wrapper" sandbox="allow-same-origin allow-forms allow-scripts"
+        src="https://aws.fortigatecnf.com/fintech-webstory"></iframe>
 
 ## Google Web Stories Performance Tracking
 
@@ -74,11 +73,13 @@ Here's a basic guide on creating a captivating Google Web Story:
 Use descriptive and keyword-rich file names for your images, add relevant alt text to all images, and optimize your Web Story's metadata with targeted keywords.
 
 To see how these strategies can be utilized effectively, here's another example of how we helped Comcast Business tell their [Security Edge](https://placedstory.com/comcast-security-edge/) story.
-<amp-story-player class="amp-player-wrapper" style="width: 370px; height: 622px;">
+<!-- <amp-story-player class="amp-player-wrapper" style="width: 370px; height: 622px;">
   <a href="https://placedstory.com/comcast-security-edge">
     <img src="/assets/story-akamai-cover.jpg" loading="lazy" data-amp-story-player-poster-img width="370" height="622"></img>
   </a>
-</amp-story-player>
+</amp-story-player> -->
+<iframe class="amp-player-wrapper" sandbox="allow-same-origin allow-forms allow-scripts"
+        src="https://placedstory.com/comcast-security-edge"></iframe>
 
 In conclusion, Google Web Stories present a unique opportunity for brands to engage their audience in a new, interactive way. As a technology director, I believe this is a tool every brand should consider incorporating into their digital strategy. It's time to tell your story, the Google Web Story way.
 
@@ -115,8 +116,18 @@ In conclusion, Google Web Stories present a unique opportunity for brands to eng
   .amp-player-wrapper {
     border-radius: 20px !important;
     overflow: hidden !important;
-    margin: 20px 0;
+    margin: 20px 0 60px 0;
+    width: 370px;
+    height: 622px;
+    max-width: 370px;
+    max-height: 620px;
   }
+      @media (max-width: 767px) {
+      .amp-player-wrapper { 
+        width: 300px;
+        height: 504px;
+      }
+    }
     ul  {
         margin-top: -10px;
     }
