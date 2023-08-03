@@ -119,8 +119,8 @@ In conclusion, Google Web Stories present a unique opportunity for brands to eng
     margin: 20px 0 60px 0;
     width: 370px;
     height: 622px;
-    max-width: 370px;
-    max-height: 620px;
+    max-width: 382px;
+    max-height: 640px;
   }
       @media (max-width: 767px) {
       .amp-player-wrapper { 
