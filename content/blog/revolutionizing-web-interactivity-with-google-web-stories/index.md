@@ -27,8 +27,19 @@ To better illustrate, here's a [demo Web Story](https://ft-webstory.surge.sh) we
 <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
 <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css"/>
 
-<iframe class="amp-player-wrapper" sandbox="allow-same-origin allow-forms allow-scripts"
-        src="https://ft-webstory.surge.sh"></iframe>
+
+<a class="desktop-no-pointer" href="https://ft-webstory.surge.sh/" target="_blank">
+  <div class="amp-player-wrapper">
+    <img class="story-demo" src="/assets/ft-story-demo.gif"/>
+    <a class="mobile-demo-link" href="https://ft-webstory.surge.sh/" target="_blank">Launch</a>
+    <div class="qr-desktop-wrapper">
+      <img class="qr-desktop" src="/assets/qr-code-story.png"/>
+      <div class="qr-desktop-guide">
+        Scan the QR code to view the story on your phone.
+      </div>
+    </div>
+  </div>
+</a>
 
 ## Why Choose Web Stories?
 
@@ -222,7 +233,7 @@ a.glow-on-hover-img {
     transition: opacity .3s ease-in-out;
 }
 .glow-on-hover-img:active {
-    color: #000
+    color: #000;
 }
 .glow-on-hover-img:active:after {
     background: transparent;
@@ -247,5 +258,64 @@ a.glow-on-hover-img {
 }
 span.gatsby-resp-image-wrapper {
     margin-left: 0 !important;
+}
+.story-demo {
+    width: 100%;
+}
+.qr-desktop-wrapper {
+  display: none;
+}
+.amp-player-wrapper {
+  position: relative;
+}
+.mobile-demo-link {
+  border-radius: 20px;
+  background: #fff;
+  color: #a90268 !important;
+  font-weight: bold !important;
+  font-family: "Gilroy", Sans-Serif;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 12px;
+  width: 200px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+@media (min-width: 767px) {
+  .mobile-demo-link {
+    display: none;
+  }
+  .desktop-no-pointer {
+    pointer-events: none;
+    position: relative;
+  }
+  .amp-player-wrapper {
+    position: relative;
+  }
+  .qr-desktop-wrapper {
+    display: flex;
+    width: 340px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+  }
+  .qr-desktop {
+    width: 120px;
+    height: 120px;
+    
+  }
+  .qr-desktop-guide {
+    color: #000;
+    border-radius: 15px;
+    padding: 30px 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
 }
 </style>
